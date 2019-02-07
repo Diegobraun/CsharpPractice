@@ -1,0 +1,7 @@
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\bin\Debug\NameOfOperador.exe.config
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\bin\Debug\NameOfOperador.exe
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\bin\Debug\NameOfOperador.pdb
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\obj\Debug\NameOfOperador.csprojAssemblyReference.cache
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\obj\Debug\NameOfOperador.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\obj\Debug\NameOfOperador.exe
+C:\Users\diego\source\repos\NameOfOperador\NameOfOperador\obj\Debug\NameOfOperador.pdb

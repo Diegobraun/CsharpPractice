@@ -1,0 +1,7 @@
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\bin\Debug\ExpressionBodiesNew.exe.config
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\bin\Debug\ExpressionBodiesNew.exe
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\bin\Debug\ExpressionBodiesNew.pdb
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\obj\Debug\ExpressionBodiesNew.csprojAssemblyReference.cache
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\obj\Debug\ExpressionBodiesNew.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\obj\Debug\ExpressionBodiesNew.exe
+C:\Users\diego\source\repos\ExpressionBodiesNew\ExpressionBodiesNew\obj\Debug\ExpressionBodiesNew.pdb

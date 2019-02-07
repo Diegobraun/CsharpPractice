@@ -1,0 +1,7 @@
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\bin\Debug\NullPropagationOperator.exe.config
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\bin\Debug\NullPropagationOperator.exe
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\bin\Debug\NullPropagationOperator.pdb
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\obj\Debug\NullPropagationOperator.csprojAssemblyReference.cache
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\obj\Debug\NullPropagationOperator.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\obj\Debug\NullPropagationOperator.exe
+C:\Users\diego\source\repos\NullPropagationOperator\NullPropagationOperator\obj\Debug\NullPropagationOperator.pdb

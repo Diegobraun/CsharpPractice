@@ -1,0 +1,7 @@
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\bin\Debug\AutoPropertyInitializer.exe.config
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\bin\Debug\AutoPropertyInitializer.exe
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\bin\Debug\AutoPropertyInitializer.pdb
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\obj\Debug\AutoPropertyInitializer.csprojAssemblyReference.cache
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\obj\Debug\AutoPropertyInitializer.csproj.CoreCompileInputs.cache
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\obj\Debug\AutoPropertyInitializer.exe
+C:\Users\diego\source\repos\AutoPropertyInitializer\AutoPropertyInitializer\obj\Debug\AutoPropertyInitializer.pdb
