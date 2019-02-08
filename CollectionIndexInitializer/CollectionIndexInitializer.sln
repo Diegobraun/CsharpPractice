@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionIndexInitializer", "CollectionIndexInitializer\CollectionIndexInitializer.csproj", "{D16092D5-1626-4C17-848D-FE0BFBDA88DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D16092D5-1626-4C17-848D-FE0BFBDA88DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16092D5-1626-4C17-848D-FE0BFBDA88DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16092D5-1626-4C17-848D-FE0BFBDA88DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16092D5-1626-4C17-848D-FE0BFBDA88DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C96EC66-CA57-419E-B60A-46CF57B03D40}
+	EndGlobalSection
+EndGlobal
