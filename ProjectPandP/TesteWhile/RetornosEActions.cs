@@ -62,6 +62,11 @@ namespace TesteWhile
             }
         }
 
+        public void ExibirPessoaSingular(Pessoa pessoa)
+        {
+            Console.WriteLine($"Id: {pessoa.Id} \n Nome: {pessoa.Nome} \n {pessoa.Idade} \n {pessoa.Sexo}");
+        }
+
         public void ExibirPessoas()
         {
             Pessoa pes;

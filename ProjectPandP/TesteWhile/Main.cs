@@ -65,8 +65,10 @@ namespace TesteWhile
         private static void Delete(RetornosEActions retornar)
         {
             retornar.ExibirPessoas();
+
             Console.WriteLine("Qual pessoa deseja apagar? ");
             int Index = Convert.ToInt32(Console.ReadLine());
+
             if (retornar.ReturnPessoa(Index) == null)
             {
                 Console.WriteLine("Pessoa não encontrada!");
@@ -82,9 +84,12 @@ namespace TesteWhile
         private static void SelectSpecific(RetornosEActions retornar)
         {
             retornar.ExibirPessoas();
-            Console.WriteLine("Qual pessoa deseja ver detalhadamente? Você pode filtrar por identificador ou nome");
+
+            Console.WriteLine("Qual pessoa deseja ver detalhadamente? (Você pode filtrar por identificador ou nome)");
             string value = Console.ReadLine();
+
             Pessoa Retorno;
+
             if (retornar.ReturnPessoa(value) == null)
             {
                 Retorno = retornar.ReturnPessoa(Convert.ToInt32(value));
@@ -94,7 +99,7 @@ namespace TesteWhile
                 Retorno = retornar.ReturnPessoa(value);
             }
 
-            Console.WriteLine($"Id: {Retorno.Id} \n Nome: {Retorno.Nome} \n {Retorno.Idade} \n {Retorno.Sexo}");
+            retornar.ExibirPessoaSingular(Retorno);
 
         }
 
@@ -118,8 +123,9 @@ namespace TesteWhile
             Console.WriteLine("Digite a quantidade de anos restante até a aposentadoria: ");
             int QuantAnosParaAposentadoria_Profissao = Convert.ToInt32(Console.ReadLine());
 
-            Profissao profissao = new Profissao(Nome_Profissao, Salario_Profissao, QuantAnosParaAposentadoria_Profissao);
+
             int Identifier = 0;
+
             if (retornar.CheckIfListIsNull())
             {
                 Identifier = 1;
@@ -128,6 +134,7 @@ namespace TesteWhile
             {
                 Identifier = retornar.GetLast() + 1;
             }
+            Profissao profissao = new Profissao(Nome_Profissao, Salario_Profissao, QuantAnosParaAposentadoria_Profissao);
             Pessoa pessoa = new Pessoa(Identifier, Nome_Pessoa, Idade_Pessoa, Sexo_Pessoa, profissao);
 
             Validacoes validar = new Validacoes();
