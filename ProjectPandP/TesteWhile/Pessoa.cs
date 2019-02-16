@@ -14,8 +14,9 @@ namespace TesteWhile
         public string Sexo { get; private set; }
         public Profissao Profissao { get; private set; }
 
-        public Pessoa(string nome, int idade, string sexo,Profissao profissao)
+        public Pessoa(int id,string nome, int idade, string sexo,Profissao profissao)
         {
+            Id = id;
             Nome = nome;
             Idade = idade;
             Sexo = sexo;

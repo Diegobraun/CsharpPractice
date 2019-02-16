@@ -37,10 +37,11 @@ namespace TesteWhile
                     int QuantAnosParaAposentadoria_Profissao = Convert.ToInt32(Console.ReadLine());
 
                     Profissao profissao = new Profissao(Nome_Profissao, Salario_Profissao, QuantAnosParaAposentadoria_Profissao);
-                    Pessoa pessoa = new Pessoa(Nome_Pessoa, Idade_Pessoa, Sexo_Pessoa, profissao);
-
-                    Validacoes validar = new Validacoes();
                     retornar = new RetornosEActions();
+                    Pessoa pessoa = new Pessoa(retornar.GetLast()+1,Nome_Pessoa, Idade_Pessoa, Sexo_Pessoa, profissao);
+                 
+                    Validacoes validar = new Validacoes();
+
 
                     if (validar.ValidarAll(pessoa))
                         retornar.Adicionar(pessoa);
