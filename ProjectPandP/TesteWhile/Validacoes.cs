@@ -18,45 +18,38 @@ namespace TesteWhile
 
         public bool ValidarNull (Pessoa pessoa)
         {
-            bool Checar = true;
             if (CheckValuesIsNull(pessoa.Nome))
-                Checar = false;
+                return false;
             else if (CheckValuesIsNull(pessoa.Idade.ToString()))
-                Checar = false;
+                return false;
             else if (CheckValuesIsNull(pessoa.Sexo))
-                Checar = false;
+                return false;
             else if (CheckValuesIsNull(pessoa.Profissao.NomeProfissao))
-                Checar = false;
+                return false;
             else if (CheckValuesIsNull(pessoa.Profissao.QuantAnosParaAposentar.ToString()))
-                Checar = false;
+                return false;
             else if (CheckValuesIsNull(pessoa.Profissao.Salario.ToString()))
-                Checar = false;
+                return false;
             else
-                Checar = true;
-
-            return Checar;
+                return true;
         }
 
         public bool ValidarLength (Pessoa pessoa)
-        {
-            bool Checar = true;
-
+        { 
             if (pessoa.Nome.Length > 15)
-                Checar = false;
+                return false;
             else if (pessoa.Idade > 113)
-                Checar = false;
+                return false;
             else if (pessoa.Sexo.Length > 10)
-                Checar = false;
+                return false;
             else if (pessoa.Profissao.NomeProfissao.Length > 20)
-                Checar = false;
+                return false;
             else if (pessoa.Profissao.QuantAnosParaAposentar > 99)
-                Checar = false;
+                return false;
             else if (pessoa.Profissao.Salario > 100000)
-                Checar = false;
+                return false;
             else
-                Checar = true;
-
-            return Checar;
+                return true;
         }
 
         public bool ValidarAll (Pessoa pessoa)
