@@ -17,7 +17,6 @@ namespace TesteWhile
             {
                 Menu();
                 int Escolha = Convert.ToInt32(Console.ReadLine());
-                Console.ReadKey();
 
 
                 switch (Escolha)
