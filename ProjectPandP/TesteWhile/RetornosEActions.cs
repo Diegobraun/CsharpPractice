@@ -42,9 +42,10 @@ namespace TesteWhile
 
         public void ExibirPessoas()
         {
+            Pessoa pes;
             for (int i = 0; i > pessoa.Count; i++)
             {
-                Pessoa pes = ReturnPessoa(i);
+                pes = ReturnPessoa(i);
                 Console.WriteLine($"Id: {pes.Id} \n Nome: {pes.Nome} \n {pes.Idade} \n {pes.Sexo}");
 
             }
