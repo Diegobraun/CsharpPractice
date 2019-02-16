@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TesteWhile
 {
-    class Principal
+    public class Principal
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
 
             RetornosEActions retornar = new RetornosEActions();
@@ -29,10 +29,10 @@ namespace TesteWhile
                         SelectAll(retornar);
                         break;
                     case 3:
-                        SelectSpecific();
+                        SelectSpecific(retornar);
                         break;
                     case 4:
-                        Delete();
+                        Delete(retornar);
                         break;
                     case 5:
                         loop = Close();
@@ -46,12 +46,12 @@ namespace TesteWhile
 
         }
 
-        private static void InvalidValue()
+        public static void InvalidValue()
         {
             Console.WriteLine("Valor inválido!");
         }
 
-        private static bool Close()
+        public static bool Close()
         {
             bool loop;
             Console.WriteLine("Saindo");
@@ -59,9 +59,8 @@ namespace TesteWhile
             return loop;
         }
 
-        public static void Delete()
+        private static void Delete(RetornosEActions retornar)
         {
-            RetornosEActions retornar = new RetornosEActions();
             retornar.ExibirPessoas();
             Console.WriteLine("Qual pessoa deseja apagar? ");
             int Index = Convert.ToInt32(Console.ReadLine());
@@ -77,9 +76,8 @@ namespace TesteWhile
 
         }
 
-        private static void SelectSpecific()
+        private static void SelectSpecific(RetornosEActions retornar)
         {
-            RetornosEActions retornar = new RetornosEActions();
             retornar.ExibirPessoas();
             Console.WriteLine("Qual pessoa deseja ver detalhadamente? Você pode filtrar por identificador ou nome");
             string value = Console.ReadLine();

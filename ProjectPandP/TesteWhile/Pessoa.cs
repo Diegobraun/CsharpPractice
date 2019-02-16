@@ -23,21 +23,21 @@ namespace TesteWhile
             Profissao = profissao;
         }
 
-        public void setId (int id)
+        public void SetId (int id)
         {
             Id = id;
         }
-        public void setNome (string nome)
+        public void SetNome (string nome)
         {
             Nome = nome;
         }
 
-        public void setIdade (int idade)
+        public void SetIdade (int idade)
         {
             Idade = idade;
         }
 
-        public void setSexo (string sexo)
+        public void SetSexo (string sexo)
         {
             Sexo = sexo;
         }

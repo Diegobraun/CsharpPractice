@@ -13,17 +13,17 @@
             QuantAnosParaAposentar = quantAnosParaAposentar;
         }
 
-        public void setNomeProfissao (string nomeProfissao)
+        public void SetNomeProfissao (string nomeProfissao)
         {
             NomeProfissao = nomeProfissao;
         }
 
-        public void setSalario (double salario)
+        public void SetSalario (double salario)
         {
             Salario = salario;
         }
 
-        public void setQuantAnosParaAposentar (int quantAnosParaAposentar)
+        public void SetQuantAnosParaAposentar (int quantAnosParaAposentar)
         {
             QuantAnosParaAposentar = quantAnosParaAposentar;
         }
