@@ -23,15 +23,19 @@ namespace TesteWhile
                 switch (Escolha)
                 {
                     case 1:
+                        Console.Clear();
                         Adicionar(retornar);
                         break;
                     case 2:
+                        Console.Clear();
                         SelectAll(retornar);
                         break;
                     case 3:
+                        Console.Clear();
                         SelectSpecific(retornar);
                         break;
                     case 4:
+                        Console.Clear();
                         Delete(retornar);
                         break;
                     case 5:
@@ -81,10 +85,17 @@ namespace TesteWhile
             retornar.ExibirPessoas();
             Console.WriteLine("Qual pessoa deseja ver detalhadamente? Você pode filtrar por identificador ou nome");
             string value = Console.ReadLine();
+            Pessoa Retorno;
             if (retornar.ReturnPessoa(value) == null)
             {
-                retornar.ReturnPessoa(Convert.ToInt32(value));
+                Retorno = retornar.ReturnPessoa(Convert.ToInt32(value));
             }
+            else
+            {
+                Retorno = retornar.ReturnPessoa(value);
+            }
+
+            Console.WriteLine($"Id: {Retorno.Id} \n Nome: {Retorno.Nome} \n {Retorno.Idade} \n {Retorno.Sexo}");
 
         }
 
@@ -109,8 +120,16 @@ namespace TesteWhile
             int QuantAnosParaAposentadoria_Profissao = Convert.ToInt32(Console.ReadLine());
 
             Profissao profissao = new Profissao(Nome_Profissao, Salario_Profissao, QuantAnosParaAposentadoria_Profissao);
-
-            Pessoa pessoa = new Pessoa(retornar.GetLast() + 1, Nome_Pessoa, Idade_Pessoa, Sexo_Pessoa, profissao);
+            int Identifier = 0;
+            if (retornar.CheckIfListIsNull())
+            {
+                Identifier = 1;
+            }
+            else
+            {
+                Identifier = retornar.GetLast() + 1;
+            }
+            Pessoa pessoa = new Pessoa(Identifier, Nome_Pessoa, Idade_Pessoa, Sexo_Pessoa, profissao);
 
             Validacoes validar = new Validacoes();
 

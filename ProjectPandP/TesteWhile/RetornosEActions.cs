@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,14 +31,35 @@ namespace TesteWhile
 
         public Pessoa ReturnPessoa (string nome)
         {
-            var Pessoa = pessoa.Where(p => p.Nome.Equals(nome));
+            var Pessoa = pessoa.Where(p => p.Nome.Contains(nome));
             return Pessoa.FirstOrDefault();
         }
         
         public int GetLast()
         {
-            var index = pessoa.OrderByDescending(p => p.Id).FirstOrDefault();
-            return Convert.ToInt32(index);
+            if (CheckIfListIsNull())
+            {
+                return 1;
+            }
+            else
+            {
+                Pessoa index = pessoa.LastOrDefault();
+                int indice = index.Id;
+                return indice;
+            }
+
+        }
+
+        public bool CheckIfListIsNull()
+        {
+            if (pessoa.Count < 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public void ExibirPessoas()
