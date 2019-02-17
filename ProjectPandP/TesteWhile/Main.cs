@@ -13,31 +13,32 @@ namespace TesteWhile
 
             RetornosEActions retornar = new RetornosEActions();
             bool loop = true;
+
             while (loop == true)
             {
                 Menu();
-                int Escolha = Convert.ToInt32(Console.ReadLine());
+                string Escolha = Console.ReadLine();
 
 
                 switch (Escolha)
                 {
-                    case 1:
+                    case "1":
                         Console.Clear();
                         Adicionar(retornar);
                         break;
-                    case 2:
+                    case "2":
                         Console.Clear();
                         SelectAll(retornar);
                         break;
-                    case 3:
+                    case "3":
                         Console.Clear();
                         SelectSpecific(retornar);
                         break;
-                    case 4:
+                    case "4":
                         Console.Clear();
                         Delete(retornar);
                         break;
-                    case 5:
+                    case "5":
                         loop = Close();
                         break;
                     default:
@@ -112,14 +113,19 @@ namespace TesteWhile
         {
             Console.WriteLine("Digite o nome da pessoa: ");
             string Nome_Pessoa = Console.ReadLine();
+
             Console.WriteLine("Digite a idade da pessoa: ");
-            int Idade_Pessoa = Convert.ToInt32(Console.ReadLine());
+            int Idade_Pessoa = int.Parse(Console.ReadLine());
+
             Console.WriteLine("Digite o sexo da pessoa: ");
             string Sexo_Pessoa = Console.ReadLine();
+
             Console.WriteLine("Digite a profissão que a pessoa exerce: ");
             string Nome_Profissao = Console.ReadLine();
+
             Console.WriteLine("Digite o salário dessa profissão: ");
             double Salario_Profissao = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("Digite a quantidade de anos restante até a aposentadoria: ");
             int QuantAnosParaAposentadoria_Profissao = Convert.ToInt32(Console.ReadLine());
 
@@ -147,8 +153,6 @@ namespace TesteWhile
             }
             else
                 Console.WriteLine("Algum erro aconteceu! Contate o administrador!");
-
-
         }
 
         private static void Menu()
