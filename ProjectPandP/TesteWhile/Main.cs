@@ -49,17 +49,15 @@ namespace TesteWhile
 
         }
 
-        public static void InvalidValue()
+        private static void InvalidValue()
         {
             Console.WriteLine("Valor inválido!");
         }
 
         public static bool Close()
         {
-            bool loop;
             Console.WriteLine("Saindo");
-            loop = false;
-            return loop;
+            return false;
         }
 
         private static void Delete(RetornosEActions retornar)
@@ -68,7 +66,7 @@ namespace TesteWhile
 
             Console.WriteLine("Qual pessoa deseja apagar? ");
             string Index = Console.ReadLine();
-
+            
             if (retornar.ReturnPessoa(Index) == null)
             {
                 Console.WriteLine("Pessoa não encontrada!");
@@ -138,17 +136,22 @@ namespace TesteWhile
             }
             Profissao profissao = new Profissao(Nome_Profissao, Salario_Profissao, QuantAnosParaAposentadoria_Profissao);
             Pessoa pessoa = new Pessoa(Identifier, Nome_Pessoa, Idade_Pessoa, Sexo_Pessoa, profissao);
-
+        
             Validacoes validar = new Validacoes();
 
 
             if (validar.ValidarAll(pessoa))
+            {
                 retornar.Adicionar(pessoa);
+                Console.Clear();
+            }
+            else
+                Console.WriteLine("Algum erro aconteceu! Contate o administrador!");
 
-            Console.Clear();
+
         }
 
-        public static void Menu()
+        private static void Menu()
         {
             Console.WriteLine("MENU");
             Console.WriteLine("1 - Salvar");
