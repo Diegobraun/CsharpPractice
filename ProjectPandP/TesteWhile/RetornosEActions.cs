@@ -16,24 +16,18 @@ namespace TesteWhile
             pessoa.Add(pes);
         }
 
-        public void Excluir (int index)
+        public void Excluir (string index)
         {
-            var Pessoa = pessoa.Where(p => p.Id == index);
+            var Pessoa = pessoa.Where(p => p.Id.ToString() == index);
             pessoa.Remove(Pessoa.FirstOrDefault());
         }
 
-        public Pessoa ReturnPessoa (int index)
+        public Pessoa ReturnPessoa (string index)
         {
-            var Pessoa = pessoa.Where(p => p.Id == index);
+            var Pessoa = pessoa.Where(p => p.Id.ToString() == index);
             return Pessoa.FirstOrDefault();
         }
 
-
-        public Pessoa ReturnPessoa (string nome)
-        {
-            var Pessoa = pessoa.Where(p => p.Nome.Contains(nome));
-            return Pessoa.FirstOrDefault();
-        }
         
         public int GetLast()
         {
@@ -64,7 +58,8 @@ namespace TesteWhile
 
         public void ExibirPessoaSingular(Pessoa pessoa)
         {
-            Console.WriteLine($"Id: {pessoa.Id} \n Nome: {pessoa.Nome} \n {pessoa.Idade} \n {pessoa.Sexo}");
+            Console.WriteLine($"Id: {pessoa.Id} \n Nome: {pessoa.Nome} \n Idade: {pessoa.Idade} \n Sexo: {pessoa.Sexo} \n" +
+            $"Profissão: {pessoa.Profissao.NomeProfissao}\n");
         }
 
         public void ExibirPessoas()
@@ -73,7 +68,7 @@ namespace TesteWhile
             for (int i = 0; i < pessoa.Count; i++)
             {
                 pes = pessoa[i];
-                Console.WriteLine($"Id: {pes.Id} \n Nome: {pes.Nome} \n {pes.Idade} \n {pes.Sexo}");
+                ExibirPessoaSingular(pes);
 
             }
         }

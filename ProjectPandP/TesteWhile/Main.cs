@@ -67,7 +67,7 @@ namespace TesteWhile
             retornar.ExibirPessoas();
 
             Console.WriteLine("Qual pessoa deseja apagar? ");
-            int Index = Convert.ToInt32(Console.ReadLine());
+            string Index = Console.ReadLine();
 
             if (retornar.ReturnPessoa(Index) == null)
             {
@@ -85,21 +85,23 @@ namespace TesteWhile
         {
             retornar.ExibirPessoas();
 
-            Console.WriteLine("Qual pessoa deseja ver detalhadamente? (Você pode filtrar por identificador ou nome)");
+            Console.WriteLine("Qual pessoa deseja ver detalhadamente? (Pesquise pelo Identificador)");
             string value = Console.ReadLine();
 
             Pessoa Retorno;
 
-            if (retornar.ReturnPessoa(value) == null)
+            
+            if (retornar.ReturnPessoa((value)) != null)
             {
-                Retorno = retornar.ReturnPessoa(Convert.ToInt32(value));
-            }
-            else
-            {
-                Retorno = retornar.ReturnPessoa(value);
+                Retorno = retornar.ReturnPessoa((value));
+                retornar.ExibirPessoaSingular(Retorno);
             }
 
-            retornar.ExibirPessoaSingular(Retorno);
+            else
+            {
+                Console.WriteLine("Pessoa não encontrada!");
+            }
+
 
         }
 
@@ -143,7 +145,7 @@ namespace TesteWhile
             if (validar.ValidarAll(pessoa))
                 retornar.Adicionar(pessoa);
 
-            retornar.ExibirPessoas();
+            Console.Clear();
         }
 
         public static void Menu()
@@ -154,6 +156,7 @@ namespace TesteWhile
             Console.WriteLine("3 - Selecionar específico");
             Console.WriteLine("4 - Excluir");
             Console.WriteLine("5 - Sair");
+            Console.WriteLine("Digite a opção desejada: ");
         }
     }
 }
