@@ -118,11 +118,8 @@ namespace TesteWhile
             string Idade_String = Console.ReadLine();
             int Idade_Aux,Idade_Pessoa;
 
-            if (int.TryParse(Idade_String, out Idade_Aux))
-                Idade_Pessoa = Idade_Aux;
-            else
-                Idade_Pessoa = 18;
-
+            Idade_Pessoa = (int.TryParse(Idade_String, out Idade_Aux)) ? Convert.ToInt32(Idade_String) : 18;
+            
             Console.WriteLine("Digite o sexo da pessoa: ");
             string Sexo_Pessoa = Console.ReadLine();
 
@@ -134,24 +131,14 @@ namespace TesteWhile
             string Salario_String = Console.ReadLine();
             double Salario_Profissao,Salario_Aux;
 
-            if (double.TryParse(Salario_String, out Salario_Aux))
-                Salario_Profissao = Salario_Aux;
-            else
-            {
-                Salario_Profissao = 994;
-            }
+            Salario_Profissao = (double.TryParse(Salario_String, out Salario_Aux)) ? Convert.ToDouble(Salario_String) : 994;
 
             Console.WriteLine("Digite a quantidade de anos restante até a aposentadoria: ");
             string QuantAnosParaAposentadoria_Profissao_String = Console.ReadLine();
             int QuantAnosParaAposentadoria_Profissao,QuantAnosParaAposentadoria_Profissao_Aux;
 
-            if (int.TryParse(QuantAnosParaAposentadoria_Profissao_String, out QuantAnosParaAposentadoria_Profissao_Aux))
-                QuantAnosParaAposentadoria_Profissao = QuantAnosParaAposentadoria_Profissao_Aux;
-            else
-            {
-                QuantAnosParaAposentadoria_Profissao = 30;
-            }
-
+            QuantAnosParaAposentadoria_Profissao = (int.TryParse(QuantAnosParaAposentadoria_Profissao_String,
+            out QuantAnosParaAposentadoria_Profissao_Aux)) ? Convert.ToInt32(QuantAnosParaAposentadoria_Profissao_String) : 30;
 
             int Identifier = 0;
 
