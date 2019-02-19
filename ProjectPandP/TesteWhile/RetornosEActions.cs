@@ -64,11 +64,9 @@ namespace TesteWhile
 
         public void ExibirPessoas()
         {
-            Pessoa pes;
             for (int i = 0; i < pessoa.Count; i++)
             {
-                pes = pessoa[i];
-                ExibirPessoaSingular(pes);
+                ExibirPessoaSingular(pessoa[i]);
 
             }
         }

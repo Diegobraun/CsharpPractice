@@ -6,6 +6,7 @@
         public double Salario { get; private set; }
         public int QuantAnosParaAposentar { get; private set; }
 
+
         public Profissao(string nomeProfissao, double salario,int quantAnosParaAposentar)
         {
             NomeProfissao = nomeProfissao;

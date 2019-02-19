@@ -76,6 +76,7 @@ namespace TesteWhile
             {
                 retornar.Excluir(Index);
             }
+            retornar.ExibirPessoas();
 
 
         }
