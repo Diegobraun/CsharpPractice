@@ -8,12 +8,11 @@ namespace TesteWhile
 {
     class TratamentoExceptions
     {
-        public void ExceptionBasic(object obj)
+        public void ConvertInt(string obj)
         {
             try
             {
-                int a;
-                int.TryParse(obj.ToString(), out a);
+                Convert.ToInt32(obj.ToString());
             }
             catch (FormatException ex)
             {
@@ -31,6 +30,46 @@ namespace TesteWhile
             {
                 Console.WriteLine(ex.Message);
             }
-        }   
+        }
+        
+        public void NullPointerExceptionPessoa (Pessoa obj)
+        {
+            try
+            {
+                Console.WriteLine(obj);
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("Valor de variável null");
+            }
+            catch (ArgumentNullException)
+            {
+                Console.WriteLine("Valor de argumento null");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+        public void NullPointerExceptionProfissao (Profissao obj)
+        {
+            try
+            {
+                Console.WriteLine(obj);
+            }
+            catch (NullReferenceException)
+            {
+                Console.WriteLine("Valor de variável null");
+            }
+            catch (ArgumentNullException)
+            {
+                Console.WriteLine("Valor de argumento null");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
