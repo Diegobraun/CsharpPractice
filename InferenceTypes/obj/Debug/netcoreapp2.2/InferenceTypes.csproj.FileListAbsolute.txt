@@ -1,0 +1,11 @@
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/bin/Debug/netcoreapp2.2/InferenceTypes.deps.json
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/bin/Debug/netcoreapp2.2/InferenceTypes.runtimeconfig.json
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/bin/Debug/netcoreapp2.2/InferenceTypes.runtimeconfig.dev.json
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/bin/Debug/netcoreapp2.2/InferenceTypes.dll
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/bin/Debug/netcoreapp2.2/InferenceTypes.pdb
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/obj/Debug/netcoreapp2.2/InferenceTypes.csprojAssemblyReference.cache
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/obj/Debug/netcoreapp2.2/InferenceTypes.csproj.CoreCompileInputs.cache
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/obj/Debug/netcoreapp2.2/InferenceTypes.AssemblyInfoInputs.cache
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/obj/Debug/netcoreapp2.2/InferenceTypes.AssemblyInfo.cs
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/obj/Debug/netcoreapp2.2/InferenceTypes.dll
+/home/diegobraun/Documentos/CsharpAvançado/CsharpPractice/InferenceTypes/obj/Debug/netcoreapp2.2/InferenceTypes.pdb
